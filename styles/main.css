@@ -107,6 +107,7 @@ footer {
   flex-direction: column;
   align-items: : center;
   margin: 3rem 0;
+  max-width: 55rem;
 }
 
 .partner-logos {
@@ -201,6 +202,7 @@ footer {
 
   footer {
     flex-wrap: nowrap;
+    padding: 0 4rem;
   }
 
   .circle-container {
@@ -249,7 +251,7 @@ footer {
 
   .accent-image {
     height: 25rem;
-    max-width: 66.5rem;
+    max-width: 66rem;
     width: 100%;
   }
 
@@ -267,6 +269,7 @@ footer {
     padding: 3rem;
     display: flex;
     flex-wrap: nowrap;
+    max-width: 55rem;
   }
 
   .regular-section > div {
