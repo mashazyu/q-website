@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 h1, h3, h5 {
   color: #201B20;
   font-family: 'Rubik', sans-serif;
@@ -22,146 +21,272 @@ section {
   border: 1px dashed #8DBD56;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  h1 {
-    font-size: 3em;
-    font-weight: 900;
-    margin-bottom: 2rem;
-  }
+h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
 
-  h3 {
-    font-size: 2.5em;
-    max-width: 70%;
-    padding: 1em 0;
-  }
+h3 {
+  font-size: 2.5em;
+  max-width: 70%;
+  padding: 1em 0;
+}
 
-  h4 {
-    font-size: 2.5rem;
-  }
+h4 {
+  font-size: 2.5rem;
+}
 
-  h5 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-left: 2rem;
-  }
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  width: 50%;
+}
 
-  p {
-    font-size: 1.125em;
-    font-weight: 200;
-  }
+p {
+  font-size: 1.125em;
+  font-weight: 200;
+}
 
+nav {
+  border-bottom: 1px solid #E3E3E3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAF9;
+  padding: 2em;
+}
+
+section {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #E3E3E3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.accent-image {
+  border-radius: 1em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+
+.image {
+  border-radius: 1em;
+  width: 30%;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 4rem 0;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: : center;
+  margin: 3rem 0;
+}
+
+.partner-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.logo {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+}
+
+.menu-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 2rem;
+}
+
+.menu-section {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.menu-item {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.menu-column {
+  width: 45%;
+}
+
+.menu-logos-container {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  min-width: 70%;
+}
+
+.heading-image {
+  visibility: hidden;
+}
+
+.social-logo   {
+  margin: 0.5rem;
+}
+
+.regular-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mobile-visible {
+  visibility: visible;
+}
+
+.desktop-visible {
+  visibility: hidden;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
   nav {
     border-bottom: 1px solid #E3E3E3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
-  }
-  main {
-    background-color: #FAFAF9;
-    padding: 2em;
-    width: 100%;
+    padding: 3rem;
+    max-width: 80rem;
   }
 
-  section {
-    margin-top: 3rem;
-    padding: 2rem;
+  main {
+    padding: 4rem;
   }
 
   footer {
-    background-color: #E3E3E3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem;
-  }
-
-  .section-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
-
-  .accent-image {
-    border-radius: 1em;
-    margin-bottom: 2em;
-    max-width: 100%;
-  }
-
-  .image {
-    border-radius: 1em;
-    width: 30%;
+    flex-wrap: nowrap;
   }
 
   .circle-container {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .heading {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .heading-image {
+    margin: 0 3rem;
+    visibility: visible;
   }
 
   .title {
     display: flex;
-    flex-direction: column;
-    margin: 2rem 0 4rem 0;
+    align-items: center;
   }
 
-  .partners {
-    display: flex;
-    flex-direction: column;
-    align-items: : center;
-    margin: 3rem 0;
-    padding: 3rem;
-  }
-
-  .partner-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-  }
 
   .logo {
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    width: 8rem;
-    height: 8rem;
-    overflow: hidden;
-  }
-
-  .menu-section-container {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-top: 2rem;
-  }
-
-  .menu-section {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-
-  .menu-item {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    margin-bottom: 1rem;
-  }
-
-  .menu-column {
-    width: 45%;
+    margin-right: 2rem;
   }
 
   .menu-logos-container {
-    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+
+  .menu-column {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  .menu-section-container {
+    width: auto;
+  }
+
+  .accent-image {
+    height: 25rem;
+    max-width: 66.5rem;
+    width: 100%;
+  }
+
+  .accent-section {
+    max-width: 80rem;
+    padding: 6rem;
+  }
+
+  .image {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .regular-section {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .regular-section > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  h5{
+    margin: 0 0 3rem;
+    width: auto;
+  }
+
+  .mobile-visible {
+    visibility: hidden;
+    width: 0rem;
+    height: 0rem;
+  }
+
+  .desktop-visible {
+    visibility: visible;
   }
 }
