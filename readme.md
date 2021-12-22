@@ -7,9 +7,12 @@ This is an example of how styling could look like.
 
 What is in to do for this page:
 - top menu
-- nice plants on the desktop resolution
+- add nice plants on the desktop resolution
+- continue cleaning up to make 1-2-1 match with the original design
+- maybe add breakpoint for tablet
 - refactoring
 
 Open questions:
 - Is this styling smth that you could imagine working with?
 - Are there any requirements for the file structure?
+- Assets?
